@@ -3,5 +3,12 @@
     c'est la page d'inscription !!!
     <br>
     <a href="/">Retour à la page d'accueil</a>
+    {{#if currentUser}}
+        {{currentUser.services.facebook.name}}
+        {{currentUser.services.facebook.gender}}
+        <button id="logout">Logout</button>
+    {{else}}
+        <button id="facebook-login">Login with Facebook</button>
+    {{/if}}
 
 </template>
