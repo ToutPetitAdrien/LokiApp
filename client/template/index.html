@@ -8,7 +8,13 @@ c'est la page d'accueil !!!
     </body> -->
 
     <template name="index">
-        c'est la page d'accueil !!!
+        c'est la page d'accueil !
         <br>
-        <a href="/register">Inscription</a>
+        {{#if currentUser}}
+            Bonjour {{currentUser.profile.first_name}}
+            <br>
+            <button class="facebook-logout" >Logout</button>
+        {{else}}
+            <a href="/register">Inscription</a>
+        {{/if}}
     </template>
