@@ -5,15 +5,7 @@ Template.register.events({
                 throw new Meteor.error("Connexion à Facebook a échoué");
                 console.log(err.reason);
             }
+            FlowRouter.go('/')
         })
     },
-    'click .facebook-logout': function(event){
-        Meteor.logout(function(err){
-            if(err){
-                throw new Meteor.error("Logout failed");
-                console.log(err.reason);
-            }
-        })
-    }
-
 })

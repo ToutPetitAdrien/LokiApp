@@ -1,12 +1,3 @@
-
-    <!-- <head>
-        <title>Titre</title>
-    </head>
-
-    <body>
-c'est la page d'accueil !!!
-    </body> -->
-
     <template name="index">
         c'est la page d'accueil !
         <br>
@@ -14,6 +5,7 @@ c'est la page d'accueil !!!
             Bonjour {{currentUser.profile.first_name}}
             <br>
             <button class="facebook-logout" >Logout</button>
+
         {{else}}
             <a href="/register">Inscription</a>
         {{/if}}

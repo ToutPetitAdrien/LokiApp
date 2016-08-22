@@ -17,6 +17,7 @@ Accounts.onCreateUser(function(options,user){
     options.profile.gender = user.services.facebook.gender;
     options.profile.link = user.services.facebook.link;
     options.profile.service = "facebook";
+    options.profile.points = 0;
 
     user.profile = options.profile
 
