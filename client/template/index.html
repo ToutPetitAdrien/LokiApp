@@ -3,10 +3,18 @@
         <br>
         {{#if currentUser}}
             Bonjour {{currentUser.profile.first_name}}
-            <br>
             <button class="facebook-logout" >Logout</button>
+            <br>
 
         {{else}}
             <a href="/register">Inscription</a>
         {{/if}}
+        <div class="button-group">
+            <button type="button" class="button-popo">Popo</button>
+            <button type="button" class="button-promenade">Promenade</button>
+            <button type="button" class="button-friandise">Friandise</button>
+            <button type="button" class="button-repas">Repas</button>
+            <button type="button" class="button-papattes">Papattes</button>
+            <button type="button" class="button-douche">Douche</button>
+        </div>
     </template>

@@ -6,5 +6,9 @@ Template.index.events({
                 console.log(err.reason);
             }
         })
+    },
+    'click .button-popo': function(event){
+        Meteor.call('addActions', 'Promenade')
+        console.log('ok !');
     }
 })
